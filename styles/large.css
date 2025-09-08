@@ -1,0 +1,187 @@
+* {
+    display: block;
+    margin: 0.2rem;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Playfair Display', serif;
+
+
+    --primary-color: #063f78;
+    --secondary-color: #016394;
+    --accent-color: #0b80a1;
+}
+
+body {
+    box-sizing: border-box;
+    padding: .4rem;
+    background-color: var(--secondary-color);
+    max-width: 95%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.navigation {
+    grid-column: 3;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+    transition: 0.5s;
+}
+
+#menuHam {
+    display: none;
+}
+
+header span {
+    grid-column: 2;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+header img {
+    grid-column: 1;
+    border: solid 1px rgba(0, 0, 0, .1);
+    background-color: white;
+    padding: .8rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    gap: 1rem;
+
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    grid-column: 1 / span 4;
+}
+
+#about-me {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-items: center;
+    text-align: center;
+    border: solid 1px black;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+
+#student {
+    grid-column: 3;
+    grid-row: 2;
+    justify-items: center;
+    padding: 1rem;
+    border: solid 1px black;
+    background-color: aliceblue;
+}
+
+#student img {
+    border: solid 1px rgba(0, 0, 0, .1);
+    padding: .5rem;
+    background-color: var(--accent-color);
+    width: 80%;
+}
+
+#courses {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    border: solid 1px black;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+#course-selector {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#course-selector button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: larger;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#course-list div {
+    display: block;
+    margin: .5rem 0;
+    padding: .5rem;
+    border: solid 1px black;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.card-course p {
+    font-weight: bold;
+}
+
+.total-credits{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+footer p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social img{
+    width: 35px;
+    
+}
+

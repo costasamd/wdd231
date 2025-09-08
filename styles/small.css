@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px){
+
+    /*navigation bar*/
+
+    #menuHam{
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: .5rem .75rem;
+    }
+    
+    #menuHam::before{
+        content: "\2630";
+        color: white;
+    }
+
+    .navigation{
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .navigation li{
+        display: none;
+    }
+
+    .navigation a{
+        display: block;
+        text-decoration: none;
+        padding: 0.75rem;
+        text-align: center;
+        color: white;
+        transition: 0.5s;
+
+    }
+
+    .show li{
+        display: block;
+    }
+
+    #menuHam.show::before{
+        content: " X ";
+    }
+
+    header span{
+        display: none;
+    }
+
+    /*body*/
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+
+    #about-me, #student, #courses{
+        grid-column: auto;
+        grid-row: auto;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+
+}

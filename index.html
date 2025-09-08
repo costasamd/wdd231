@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="Welcome to the course home page.">
+    <meta name="author" content="Samuel Dias Costa">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 600px)">
+    
+    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/course-list.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/circle-s.svg" alt="logo" width="50">
+        <span>Samuel Dias Costa</span>
+
+        <a id="menuHam" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <h1>
+            Home
+        </h1>
+        <section id="about-me">
+            <h2>
+                About me
+            </h2>
+            <p>I'm Samuel Dias Costa. I'm from Brazil and I live in UK with my family, I also lived in Spain. I can speak three lengagues and I love learn new cultures. I am working towards my degree in softwear development, it's a big change for me, but I am loving it and I am learning so many new things. It's not always easy, but it's always exciting to think about what new learning is coming. </p>
+        </section>
+        <section id="student">
+            <h2>
+                Student Photo
+            </h2>
+            <img src="images/samuel_costa.webp" alt="student photo" width="250">
+        
+        </section>
+        <section id="courses">
+            <h2>
+                Web Certificate Courses
+            </h2>
+            <div id="course-selector">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list">
+                <!-- Course items will be dynamically inserted here -->
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn logo" width="20" loading="lazy" decoding="async"></a>
+            <a href="https://github.com/costasamd" target="_blank"><img src="images/github.svg" alt="github logo" width="20" loading="lazy" decoding="async"></a>
+            <a href="https://www.facebook.com/costasamd/" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="20" loading="lazy" decoding="async"></a>
+            <a href="https://www.instagram.com/costasamd/" target="_blank"><img src="images/instagram.svg" alt="instagram logo" width="20" loading="lazy" decoding="async"></a>
+        </div>
+        <p><span id="currentyear"></span>| Samuel Dias Costa - Manchester - UK</p>
+        <p><span id="lastModified"></span></p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "family_name": "Costa",
+    "moved_in": "2023-09-15",
+    "family_size": 4,
+    "visited_by_bishop": true,
+    "individuals": [
+        {
+            "first_name": "Samuel",
+            "gender": "male",
+            "birthdate": 1986
+        },
+        {
+            "first_name": "Eliana",
+            "gender": "female",
+            "birthdate": 1983
+        },
+        {
+            "first_name": "Julia",
+            "gender": "female",
+            "birthdate": 2011
+        },
+        {
+            "first_name": "Ethan",
+            "gender":"male",
+            "birthdate": 2016
+        }
+    ]
+}

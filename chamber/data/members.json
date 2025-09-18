@@ -1,10 +1,10 @@
-{
-    "members": [
+[
     {
         "name": "Bem Brasil Restaurant",
         "address": "King Street West, Manchester M3 2GQ",
         "phone": "0161 839 2525",
         "website": "https://www.bembrasilrestaurants.com/restaurants/deansgate/",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/bem_brasil.webp",
         "membershipLevel": "Gold"
     },
 
@@ -13,6 +13,7 @@
         "address": "303 Deansgate, Manchester M3 4LQ",
         "phone": "+44 (0) 161 870 1600",
         "website": "https://www.ihg.com/spnd/hotels/gb/en/manchester/mandg/hoteldetail?nocache=true",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/ihg_hotel.webp",
         "membershipLevel": "Silver"
     },
 
@@ -21,6 +22,7 @@
         "address": "Manchester Arndale, Manchester M4 3AB",
         "phone": "0333 996 9666",
         "website": "https://www.urbanplayground.co.uk/attractions/manchester/the-cube",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/the_cube.webp",
         "membershipLevel": "Gold"
     },
 
@@ -29,6 +31,7 @@
         "address": "Broughton Leisure Cntre, Great Cheetham St W, Salford M7 2DN",
         "phone": "None",
         "website": "https://www.cityofsalfordsc.co.uk/",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/cos_swimming.webp",
         "membershipLevel": "Bronze"
     },
 
@@ -37,6 +40,7 @@
         "address": "115 Oxford Rd, Manchester M1 7DU",
         "phone": "01614643654",
         "website": "https://archies.com/contact/",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/archies.webp",
         "membershipLevel": "Silver"
     },
 
@@ -45,6 +49,7 @@
         "address": "Manchester Arndale, Manchester, M4 3AQ",
         "phone": "0161 833 9851",
         "website": "https://manchesterarndale.com/",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/manchester_arndale.webp",
         "membershipLevel": "Bronze"
     },
 
@@ -53,8 +58,8 @@
         "address": "Oxford Rd, Manchester M13 9PL",
         "phone": "+44 (0) 161 306 6000",
         "website": "https://www.manchester.ac.uk/",
+        "imageUrl": "https://github.com/costasamd/wdd231/blob/main/chamber/images/manchester_uni.webp",
         "membershipLevel": "Gold"
     }
 
 ]
-}

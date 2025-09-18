@@ -16,12 +16,55 @@
     <meta property="og:image" content="bee.png">
     <meta property="og:url" content="https://costasamd.github.io/wdd231/chamber/directory.html">
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <script defer src="scripts/directory.js"></script>
 
 </head>
 <body>
-    <footer>
+    <header>
+        <img src="bee.png" alt="Bee Logo" id="logo" width="50" height="50">
+        <h1>Chamber of Commerce - Directory</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div id="cards"></div>
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <p>Manchester Chamber of commerce</p>
+            <p>ELLIOT HOUSE, 151 DEANSGATE - MANCHESTER, M3 3WD - TEL: 0161 393 4321</p>
+            <p>https://www.gmchamber.co.uk/</p>
+        </div>
+
+        <div id="social-icons">
+            <a href="https://www.facebook.com/gmchamber/"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="https://twitter.com/gmchamber"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/gmchamber/"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+            <a href="https://www.linkedin.com/company/manchester-chamber-of-commerce/"><img src="images/linkedin.png" alt="LinkedIn" width="30" height="30"></a>
+        </div>
+
+        <div id="student-info">
+            <p>WDD 231 - Class Project</p>
+            <p>Samuel Dias Costa</p>
+            <span id="year">| Manchester Chamber of Commerce</span>
+            <span id="lastModified"></span>
+
+        </div>
         <!--Atribuition required by the Flaticon License-->
         <a href="https://www.flaticon.com/free-icons/bee" title="bee icons">Bee icons created by juicy_fish - Flaticon</a>
     </footer>

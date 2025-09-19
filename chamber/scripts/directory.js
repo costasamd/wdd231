@@ -1,11 +1,11 @@
-const url = 'https://github.com/costasamd/wdd231/blob/main/chamber/data/members.json';
+const url = './data/members.json';
 const cards = document.getElementById('cards');
 
 async function getBussinessData() {
     const response = await fetch(url);
     const data = await response.json();
 //console.table(data.members);
-    displayBussiness(data.members);
+    displayBussiness(data.member);
 }
 
 const displayBussiness = ((members) => {

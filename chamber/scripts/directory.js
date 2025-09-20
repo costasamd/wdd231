@@ -16,25 +16,29 @@ const displayBussiness = ((members) => {
         let infoPhone = document.createElement('p');
         let infoUrl = document.createElement('a');
         let logo = document.createElement('img');
+        let membershipLevel = document.createElement('h3');
 
         bussinessName.textContent = `${member.name} `;
 
         infoAddress.textContent = `Address: ${member.address}`;
         infoPhone.textContent = `Phone: ${member.phone}`;
-        infoUrl.textContent = `Website: ${member.url}`;
-        infoUrl.setAttribute('href', member.url);
+        infoUrl.textContent = `${member.name} Website`;
+        infoUrl.setAttribute('href', member.website);
         
-        logo.setAttribute('src', member.imageurl);
+        logo.setAttribute('src', member.imageUrl);
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '340');
         logo.setAttribute('height', '440');
+
+        membershipLevel.textContent = `Membership: ${member.membershipLevel}`;
 
         card.appendChild(logo);
         card.appendChild(bussinessName);
         card.appendChild(infoAddress);
         card.appendChild(infoPhone);
         card.appendChild(infoUrl);
+        card.appendChild(membershipLevel);
 
         cards.appendChild(card);
     });

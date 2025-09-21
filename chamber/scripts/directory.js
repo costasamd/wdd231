@@ -1,14 +1,26 @@
-const url = './data/members.json';
-const cards = document.getElementById('cards');
+// Date and Last Modified Script--------------------------------------------------//
 
-async function getBussinessData() {
+const year = document.getElementById('year');
+const lastmod = document.getElementById('lastModified');
+
+const today = new Date();
+
+year.innerHTML = `${today.getFullYear()} | Manchester UK`;
+lastmod.innerHTML = `Last Modified: ${document.lastModified}`;
+
+// Directory Script-----------------------------------------------------------------//
+
+const url = './data/members.json';
+const cards = document.querySelector('#cards');
+
+async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
 //console.table(data.members);
-    displayBussiness(data.member);
+    displayBusiness(data.member);
 }
 
-const displayBussiness = ((members) => {
+const displayBusiness = (members) => {
     members.forEach(member => {
         let card = document.createElement('section');
         let bussinessName = document.createElement('h2');
@@ -22,8 +34,9 @@ const displayBussiness = ((members) => {
 
         infoAddress.textContent = `Address: ${member.address}`;
         infoPhone.textContent = `Phone: ${member.phone}`;
-        infoUrl.textContent = `${member.name} Website`;
+        infoUrl.textContent = `Visit Website`;
         infoUrl.setAttribute('href', member.website);
+        infoUrl.setAttribute('target', '_blank');
         
         logo.setAttribute('src', member.imageUrl);
         logo.setAttribute('alt', `Logo of ${member.name}`);
@@ -42,8 +55,21 @@ const displayBussiness = ((members) => {
 
         cards.appendChild(card);
     });
-})
+}
 
-getBussinessData();
+getBusinessData();
+
+
+// Navigation Script----------------------------------------------------------------//
+
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menuHam');
+
+//add event listener//
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
 
 

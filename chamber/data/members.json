@@ -14,7 +14,7 @@
         "address": "303 Deansgate, Manchester M3 4LQ",
         "phone": "+44 (0) 161 870 1600",
         "website": "https://www.ihg.com/spnd/hotels/gb/en/manchester/mandg/hoteldetail?nocache=true",
-        "imageUrl": "./images/ihg_hotel.webp",
+        "imageUrl": "./images/ihg_hotel_small.webp",
         "membershipLevel": "Silver"
     },
 
@@ -23,7 +23,7 @@
         "address": "Manchester Arndale, Manchester M4 3AB",
         "phone": "0333 996 9666",
         "website": "https://www.urbanplayground.co.uk/attractions/manchester/the-cube",
-        "imageUrl": "./images/the_cube.webp",
+        "imageUrl": "./images/the_cube_small.webp",
         "membershipLevel": "Gold"
     },
 
@@ -32,7 +32,7 @@
         "address": "Broughton Leisure Cntre, Great Cheetham St W, Salford M7 2DN",
         "phone": "None",
         "website": "https://www.cityofsalfordsc.co.uk/",
-        "imageUrl": "./images/cos_swimming.webp",
+        "imageUrl": "./images/cos_swimming_small.webp",
         "membershipLevel": "Bronze"
     },
 
@@ -50,7 +50,7 @@
         "address": "Manchester Arndale, Manchester, M4 3AQ",
         "phone": "0161 833 9851",
         "website": "https://manchesterarndale.com/",
-        "imageUrl": "./images/manchester_arndale.webp",
+        "imageUrl": "./images/manchester_arndale_small.webp",
         "membershipLevel": "Bronze"
     },
 

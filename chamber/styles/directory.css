@@ -2,12 +2,13 @@
     display: block;
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 :root{
     --primary-color: #E1BB00;
-    --secondary-color: #2F3544;
+    --secondary-color: #000;
     --acent-color: #0025E0;
     --background-color: #F5F5F5;
 }
@@ -43,6 +44,8 @@ header h1{
     color: var(--secondary-color);
     text-decoration: underline;
 }
+
+
 
 h1{
     text-align: center;
@@ -110,8 +113,8 @@ h1{
 }
 
 #cards img{
-    width: 50%;
-    height: 35%;
+    width: 80%;
+    height: auto;
     border: solid 1px var(--background-color);
     background-color: var(--background-color);
     border-radius: 10px;
@@ -162,7 +165,6 @@ footer{
     text-align: left;
     color: var(--secondary-color);
     font-size: medium;
-    font-weight: bold;
 }
 
 #social-icons{
@@ -180,5 +182,10 @@ footer{
     color: var(--secondary-color);
     font-size: medium;
     font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 

@@ -33,13 +33,14 @@ async function apiFetch() {
 
 function displayWeather(data) { 
     townName.innerHTML = data.city.name;
-    currentTemp.innerHTML = `Todays Temp - ${data.list[0].main.temp} &deg; C`;
+    currentTemp.innerHTML = `Today - ${data.list[0].main.temp} &deg; C`;
     weatherIcon.src = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
-    weatherIcon.alt = data.list[0].weather[0].description;
+    weatherIcon.alt = `${data.list[0].weather[0].description}`;
+
 
     dayOne.innerHTML = `Tomorrow Temp - ${data.list[2].main.temp} &deg; C`;
-    dayTwo.innerHTML = `Day After Tomorrow Temp - ${data.list[4].main.temp} &deg; C`;
-    dayThree.innerHTML = `In Three Days Temp - ${data.list[6].main.temp} &deg; C`;
+    dayTwo.innerHTML = `In two days - ${data.list[4].main.temp} &deg; C`;
+    dayThree.innerHTML = `In Three Days - ${data.list[6].main.temp} &deg; C`;
 
 }
 

@@ -50,44 +50,41 @@
     </header>
 
     <main>
-        <div id="heros">
-            <picture class="hero">
-            <img src="images/manchester_big.webp" alt="Manchester Skyline" width="1500" height="500" loading="lazy" decoding="async">
-            </picture>
-            <div id="call">
-                <button id="join">Join Now</button>
-            </div>
-        </div>
-        <h1>Welcome to Manchester Chamber of Commerce</h1>
-        <div id="content">
-            <section id="forecast">
-                <div class="weather">
-                    <h2 id="town"></h2>
-                    <img id="graphic" src="placeholder" alt="" width="80" height="80" loading="lazy" decoding="async">
-                    <h3 id="current-temp"></h3>
-                    <div id="day-1"></div>
-                    <div id="day-2"></div>
-                    <div id="day-3"></div>
-                </div>
-            </section>
-            <div id="second">
-                <section id="comunity">
-                    <h2>Current Event</h2>
-                    <img src="images/lake_kayak.webp" alt="kyak on the lake" width="500" height="250" loading="lazy" decoding="async">
-                    <h3>Kayak at Schotman's Flash</h3>
-                    <p>Discover Wigan's Watersports Activity Centre at the heart of a genuine national treasure, the beautiful and unique
-                    Flashes of Wigan and Leigh National Nature Reserve.</p>
-                    
-                    <p>Here they offer a range of watersports, coaching and courses for people of all abilities - delivered by fully qualified
-                    and friendly instructors who are on hand to help you, guide you, and ensure your safety.</p>
-                </section>
-            </div>
-            <div id="first">
-                <h2>Highlight Business</h2>
-                <div id="spotlight"></div>
-            </div>
-        </div>
-        
+        <form>
+            <fieldset>
+                <legend>Person's Information</legend>
+                <label for="firstname">First Name:</label>
+                <input name="firstname" id="firstname" type="text" autocomplete="given-name" required>
+                <label for="lastname">Last Name:</label>
+                <input name="lastname" id="lastname" type="text" autocomplete="family-name" required>
+                <label for="title">Organizational Title:</label>
+                <input name="title" id="title" type="text" autocomplete="organization-title" pattern="A-Za-z\- ]{7,}$">
+                <label for="email">Email:</label>
+                <input name="email" id="email" type="email" placeholder=name@name.com autocomplete="off" required>
+                <label for="phone">Mobile Phone</label>
+                <input name="phone" id="phone" type="tel" autocomplete="tel" required>
+                <label for="organization">Business/Organization's name:</label>
+                <input name="organization" id="organization" type="text" autocomplete="organization" required>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label for="membership">Your Choice:</label>
+                <select name="membership" id="membership">
+                    <option value="">Please choose an option</option>
+                    <option value="np">NP - Membership is for Non-profit Organization an there is no fee</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </fieldset>
+            <Fieldset>
+                <legend>About your Organization</legend>
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" rows="10" cols="40"></textarea>
+            </Fieldset>
+            <input name="stamp" id="timestamp" type="hidden" value="">
+            <button type="submit">Join Now</button>
+        </form>
     </main>
 
     <footer>

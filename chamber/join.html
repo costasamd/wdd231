@@ -24,33 +24,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index_small.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join_small.css">
 
     <!--Scripts-->
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/index.js"></script>
     <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/modal.js"></script>
 
 </head>
 <body>
     <header>
         <img src="images/bee.webp" alt="Bee Logo" id="logo" width="160" height="160" loading="lazy" decoding="async">
-        <span>Chamber of Commerce - Home</span>
+        <span>Chamber of Commerce - Join Us</span>
 
         <a id="menuHam-index" href="#"></a>
         <nav id="navbar-index">
             <ul class="navigation-index">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <form>
+        <form action="thankyou.html" method="get">
             <fieldset>
                 <legend>Person's Information</legend>
                 <label for="firstname">First Name:</label>
@@ -85,6 +86,55 @@
             <input name="stamp" id="timestamp" type="hidden" value="">
             <button type="submit">Join Now</button>
         </form>
+
+        <!--modals dialogue-->
+        <section id="member">
+            <div class="modal">
+                <h2>Non-profit Membership</h2>
+                <button id="npbtn">Learn More</button>
+                <dialog id="nonProfit">
+                    <p>No fees</p>
+                    <p>Adivertise events</p>
+                    <p>Organization card displayed in directory</p>
+                    <button id="npClose">Close</button>
+                </dialog>
+            </div>
+            <div class="modal">
+                <h2>Bronze Membership</h2>
+                <button id="bronzebtn">Learn More</button>
+                <dialog id="brDialog">
+                    <p>Fee: $100</p>
+                    <p>All benefits from non-profit</p>
+                    <p>plus:</p>
+                    <p>Training with experts</p>
+                    <button id="bronzeClose">Close</button>
+                </dialog>
+            </div>
+            <div class="modal">
+                <h2>Silver Membership</h2>
+                <button id="silverbtn">Learn More</button>
+                <dialog id="silDialog">
+                    <p>Fee: $200</p>
+                    <p>All benefits from Bronze</p>
+                    <p>plus:</p>
+                    <p>Discount with all business associated with us</p>
+                    <p>Possible highlight in front page</p>
+                    <button id="silverClose">Close</button>
+                </dialog>
+            </div>
+            <div class="modal">
+                <h2>Gold Membership</h2>
+                <button id="goldbtn">Learn More</button>
+                <dialog id="goldDialog">
+                    <p>Fee: $300</p>
+                    <p>All benefits from Silver</p>
+                    <p>plus:</p>
+                    <p>Free stand in events hosted by us</p>
+                    <p>Discounted price in events hosted by other organizations</p>
+                    <button id="goldClose">Close</button>
+                </dialog>
+            </div>
+        </section>
     </main>
 
     <footer>

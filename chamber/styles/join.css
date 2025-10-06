@@ -1,0 +1,255 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --primary-color: #E1BB00;
+    --secondary-color: #000;
+    --acent-color: #0025E0;
+    --background-color: #F5F5F5;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border: solid 1px var(--background-color);
+    background-color: var(--background-color);
+    border-radius: 80%;
+}
+
+header span {
+    font-size: xx-large;
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Navigation Bar Section */
+#navbar-index {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar-index ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar-index a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: block;
+    padding: .5rem;
+    border: solid 2px var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+#navbar-index a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+#navbar-index .active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#menuHam-index {
+    display: none;
+}
+
+/* join main-----------------------*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form{
+    width: 650px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid rgba(0 0 0 / 0.1);
+    background-color: var(--primary-color);
+    display: grid; 
+}
+
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: .5rem;
+    border: 1px solid rgba(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend{
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+label, button, textarea{
+    font-size: 1.1rem;
+}
+
+input, select{
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+button{
+    margin: 1rem;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    height: 45px;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#member{
+    grid-column: 2;
+    margin-top: 20rem;
+
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    border: 2px solid rgba(0 0 0 / 0.5);
+    background-color: var(--primary-color);
+    width: 500px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.3rem;
+    background-color: var(--background-color);
+}
+
+dialog button{
+    width: 150px;
+    font-size: 2rem;
+}
+
+::backdrop{
+    background-color: rgba(0 0 0 / 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#contact-info {
+    text-align: left;
+    color: var(--secondary-color);
+    font-size: medium;
+}
+
+#social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+#student-info {
+    text-align: right;
+    color: var(--secondary-color);
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}

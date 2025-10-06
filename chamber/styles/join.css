@@ -1,5 +1,5 @@
 * {
-    display: block;
+    
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
@@ -27,6 +27,7 @@ header {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
+    padding: .5rem;
     background-color: var(--primary-color);
     width: 100%;
 }
@@ -55,19 +56,18 @@ h1 {
     color: var(--secondary-color);
 }
 
-/* Navigation Bar Section */
-#navbar-index {
+#navbar {
     display: flex;
     justify-content: flex-end;
 }
 
-#navbar-index ul {
+#navbar ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-#navbar-index a {
+#navbar a {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
@@ -77,19 +77,19 @@ h1 {
     background-color: var(--background-color);
 }
 
-#navbar-index a:hover {
+#navbar a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transition: .3s;
 }
 
-#navbar-index .active {
+#navbar .active {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-#menuHam-index {
+#menuHam {
     display: none;
 }
 
@@ -149,6 +149,7 @@ button:hover{
 #member{
     grid-column: 2;
     margin-top: 20rem;
+    padding: 1rem;
 
 }
 
@@ -173,8 +174,9 @@ button:hover{
     animation-duration: 2s;
 }
 
+
 dialog{
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
     width: 300px;
@@ -193,24 +195,9 @@ dialog button{
     background-color: rgba(0 0 0 / 0.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+dialog[open]{
+    display:flex;
+}
 
 
 /* Footer Section */

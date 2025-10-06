@@ -1,4 +1,4 @@
-*{
+* {
     display: block;
     margin: 0;
     padding: 0;
@@ -6,32 +6,33 @@
     font-weight: 400;
 }
 
-:root{
+:root {
     --primary-color: #E1BB00;
     --secondary-color: #000;
     --acent-color: #0025E0;
     --background-color: #F5F5F5;
 }
 
-body{
+body {
     box-sizing: border-box;
     margin: 1rem;
     padding: 1rem;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    
+
 }
 
-header{
+header {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
+    padding: .5rem;
     background-color: var(--primary-color);
     width: 100%;
 }
 
-header img{
+header img {
     width: 50px;
     height: auto;
     border: solid 1px var(--background-color);
@@ -39,7 +40,7 @@ header img{
     border-radius: 80%;
 }
 
-header span{
+header span {
     font-size: xx-large;
     text-align: center;
     color: var(--secondary-color);
@@ -48,26 +49,25 @@ header span{
 
 
 
-h1{
+h1 {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
     color: var(--secondary-color);
 }
 
-/* Navigation Bar Section */
-#navbar-index{
+#navbar {
     display: flex;
     justify-content: flex-end;
 }
 
-#navbar-index ul{
+#navbar ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-#navbar-index a{
+#navbar a {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
@@ -77,97 +77,37 @@ h1{
     background-color: var(--background-color);
 }
 
-#navbar-index a:hover{
+#navbar a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transition: .3s;
 }
 
-#navbar-index .active{
+#navbar .active {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-#menuHam-index {
+#menuHam {
     display: none;
 }
 
-/* Directory Cards Section 
-
-#cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-row: auto;
-    gap: .5rem;
-    margin-top: 1rem;
-}
-
-#cards section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: .5rem;
-    border: solid 2px var(--acent-color);
-    border-radius: 10px;
-    color: var(--primary-color);
-}
-
-#cards img{
-    width: 80%;
-    height: auto;
-    border: solid 1px var(--background-color);
-    background-color: var(--background-color);
-    border-radius: 10px;
-    margin-bottom: .5rem;
-    padding: 5px;
-}
-
-#cards h2{
-    font-size: x-large;
-    margin-bottom: 1rem;
-}
-#cards p{
-    font-size: medium;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-#cards a{
-    text-decoration: none;
-    color: var(--acent-color);
-    font-weight: bold;
-    display: block;
-    padding: .5rem;
-    border: solid 2px var(--primary-color);
-    background-color: var(--background-color);
-    border-radius: 10px;
-}
-
-#cards h3{
-    font-size: large;
-    margin-top: 1rem;
-    text-decoration: underline;
-}
-
-*/
 
 /* main section */
 
 main{
     display: flex;
     flex-direction: column;
+    
 }
 
 #heros{
     position: relative;
-    width: 100%;
-    height: auto;
 }
 
 .hero img{
-    width: 100%;
+    width: 101%;
     height: 400px;
     object-fit: cover;
     overflow: hidden;

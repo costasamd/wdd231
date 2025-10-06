@@ -1,5 +1,5 @@
-const menu = document.querySelector('.navigation-index');
-const hambutton = document.querySelector('#menuHam-index');
+const menu = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menuHam');
 
 //add event listener//
 

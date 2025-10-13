@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of commerce Home Page</title>
-    <meta name="description" content="Contain forecast of the city, a highlight business and events around the city.">
+    <title>Discover</title>
+    <meta name="description" content="Directory of the Chamber of Commerce, contain the profile of all the bussinesses that are members of the Chamber.">
     <meta name="author" content="Samuel Dias Costa">
 
     <!--Favicon-->
@@ -12,7 +12,7 @@
 
     <!--Facebook Meta-->
 
-    <meta property="og:title" content="Chamber of commerce Home Page">
+    <meta property="og:title" content="Directory of the Chamber">
     <meta property="og:description" content="bussinesses that are members of the Chamber of Commerce">
     <meta property="og:image" content="https://costasamd.github.io/wdd231/chamber/bee.png">
     <meta property="og:url" content="https://costasamd.github.io/wdd231/chamber/directory.html">
@@ -24,25 +24,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index_small.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/navigation_small.css">
 
     <!--Scripts-->
-    <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/index.js"></script>
-    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/discover.js"></script>
 
 </head>
 <body>
     <header>
-        <img src="images/bee.webp" alt="Bee Logo" id="logo" width="160" height="160" loading="lazy" decoding="async">
-        <span>Chamber of Commerce - Home</span>
+        <img src="images/bee.webp" alt="Bee Logo" id="logo" width="50" height="50">
+        <span>Chamber of Commerce - Directory</span>
 
         <a id="menuHam" href="#"></a>
         <nav id="navbar">
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
@@ -50,44 +48,9 @@
     </header>
 
     <main>
-        <div id="heros">
-            <picture class="hero">
-            <img src="images/manchester_big.webp" alt="Manchester Skyline" width="1500" height="500" loading="lazy" decoding="async">
-            </picture>
-            <div id="call">
-                <button id="join">Join Now</button>
-            </div>
-        </div>
-        <h1>Welcome to Manchester Chamber of Commerce</h1>
-        <div id="content">
-            <section id="forecast">
-                <div class="weather">
-                    <h2 id="town"></h2>
-                    <img id="graphic" src="placeholder" alt="" width="80" height="80" loading="lazy" decoding="async">
-                    <h3 id="current-temp"></h3>
-                    <div id="day-1"></div>
-                    <div id="day-2"></div>
-                    <div id="day-3"></div>
-                </div>
-            </section>
-            <div id="second">
-                <section id="comunity">
-                    <h2>Current Event</h2>
-                    <img src="images/lake_kayak.webp" alt="kyak on the lake" width="500" height="250" loading="lazy" decoding="async">
-                    <h3>Kayak at Schotman's Flash</h3>
-                    <p>Discover Wigan's Watersports Activity Centre at the heart of a genuine national treasure, the beautiful and unique
-                    Flashes of Wigan and Leigh National Nature Reserve.</p>
-                    
-                    <p>Here they offer a range of watersports, coaching and courses for people of all abilities - delivered by fully qualified
-                    and friendly instructors who are on hand to help you, guide you, and ensure your safety.</p>
-                </section>
-            </div>
-            <div id="first">
-                <h2>Highlight Business</h2>
-                <div id="spotlight"></div>
-            </div>
-        </div>
-        
+        <h1>Discover Manchester</h1>
+        <h3 id="msg"></h3>
+        <div id="cards"></div>
     </main>
 
     <footer>

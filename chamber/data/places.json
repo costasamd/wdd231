@@ -1,0 +1,55 @@
+{
+"places":[
+    {
+        "name": "Science Museum",
+        "address": "Liverpool Rd, Manchester M3 4JP",
+        "description": "he Science and Industry Museum in Manchester, England, traces the development of science, technology and industry with emphasis on the city's achievements in these fields.",
+        "image": "./images/science_museum.webp"
+    },
+    {
+        "name": "Crystal Maze",
+        "address": "St Johns, Lower Byrom St, Manchester M3 4FP",
+        "description": "Interactive team games set in 4 adventure zones, based on a popular 1990s television show.",
+        "image": "./images/crystal_maze.webp"
+    },
+    {
+        "name": "Manchester Cathedral",
+        "address": "Victoria St, Manchester M3 1SX",
+        "description": "Manchester Cathedral, formally the Cathedral and Collegiate Church of St Mary, St Denys and St George, in Manchester, England, is the mother church of the Anglican Diocese of Manchester, seat of the Bishop of Manchester and the city's parish church.",
+        "image": "./images/manchester_cathedral.webp"
+    },
+    {
+
+        "name": "Manchester Art Gallery",
+        "address": "Mosley St, Manchester M2 3JL",
+        "description": "Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre, England.",
+        "image": "./images/manchester_art_gallery.webp"
+    },
+    {
+        "nome": "The John Rylands Library",
+        "address": "150 Deansgate, Manchester M3 3EH",
+        "description": "The John Rylands Research Institute and Library is a late-Victorian neo-Gothic building on Deansgate in Manchester, England. It is part of the University of Manchester. The library, was opened to the public in 1900.",
+        "image": "./images/the_john_library.webp"
+    },
+    {
+        "name": "Manchester Palace Theatre",
+        "address": "97 Oxford St, Manchester M1 6FT",
+        "description": "The Palace Theatre is one of the main theatres in Manchester, England. The Palace and its sister theatre the Opera House on Quay Street are operated by the same parent company, Ambassador Theatre Group.",
+        "image": "./images/palace_theatre.webp"
+        
+    },
+    {
+        "name": "Manchester Royal Exchange Theatre",
+        "address": "St Ann's Square, Manchester M2 7DH",
+        "description": "Housed in one of the most beautiful buildings in the city, you need only step inside to begin a journey into the world of the Royal Exchange Theatre. Come on in, see what makes us tick and share in our excitement for the future.",
+        "image": "./images/royal_exchange_theatre.webp"
+    },
+    {
+        "name": "Manchester Old Trafford Stadium",
+        "address": "Old Trafford, Stretford, Manchester M16 0RA",
+        "description": "Old Trafford Stadium is the world-famous home of Manchester United, and there's plenty to do when you visit. Visit on a non-matchday and enjoy a behind the scenes Stadium Tour.",
+        "image": "./images/manchester_old_trafford_stadium.webp"
+    }
+
+]
+}

@@ -101,9 +101,6 @@ h1{
     border: 1px solid var(--secondary-color);
     border-radius: 1rem;
     background-color: #E1BB00;
-    width: 800px;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 
 #cards{

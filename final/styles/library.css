@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+:root{
+    --primary:#000000;
+    --secondary: #ffffff;
+    --accent: #ffd700;
+    --extracolor: #eeeeee;
+
+    --altfont: "Grape Nuts";
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header span{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#hero{
+    overflow: hidden;
+}
+
+h1{
+    font-family: var(--altfont);
+    font-size: 3rem;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#tiles{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+    grid-gap: .3rem;
+    background-color: var(--extracolor);
+    overflow: hidden;
+}
+
+#even{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--accent);
+    width: 100%;
+    background-color: var(--accent);
+}
+
+#rul{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    border: 5px solid var(--primary);
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+#hig{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    border: 5px solid var(--primary);
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+#new{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    border: 5px solid var(--accent);
+    width: 100%;
+    background-color: var(--accent);
+}
+
+.tiles a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--extracolor);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary);
+}
+
+footer p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}

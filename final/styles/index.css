@@ -82,6 +82,12 @@ p{
     color: var(--secondary);
 }
 
+#rul a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--accent);
+}
+
 #hig{
     grid-column: 1;
     grid-row: 2;

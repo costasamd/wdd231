@@ -30,10 +30,6 @@ header span{
     text-align: center;
 }
 
-#hero{
-    overflow: hidden;
-}
-
 h1{
     font-family: var(--altfont);
     font-size: 3rem;
@@ -45,70 +41,79 @@ p{
     font-size: 1.5rem;
 }
 
-#tiles{
+main{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 2;
-    grid-gap: .3rem;
-    background-color: var(--extracolor);
-    overflow: hidden;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
 }
 
-#even{
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid var(--accent);
-    width: 100%;
-    background-color: var(--accent);
+main h1{
+    grid-column: 1 / 3;
+    text-align: center;
 }
 
-#rul{
-    grid-column: 2;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
+#darkmagician img{
+    grid-column: 1 / 2;
     border: 5px solid var(--primary);
-    width: 100%;
-    background-color: var(--primary);
-    color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
-#hig{
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-    border: 5px solid var(--primary);
-    width: 100%;
-    background-color: var(--primary);
-    color: var(--secondary);
+form {
+    width: 650px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid rgba(0 0 0 / 0.1);
+    background-color: var(--primary-color);
+    display: grid;
 }
 
-#new{
-    grid-column: 2;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-    border: 5px solid var(--accent);
-    width: 100%;
-    background-color: var(--accent);
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: .5rem;
+    border: 1px solid rgba(0 0 0 / 0.2);
+    padding: 1rem;
 }
 
-.tiles a{
+legend {
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+label,
+button,
+textarea {
+    font-size: 1.1rem;
+}
+
+input {
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--secondary);
+    color: var(--primary);
     font-size: 1.5rem;
-    text-decoration: none;
-    background-color: var(--primary);
-    color: var(--extracolor);
+    height: 45px;
 }
+
+button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+:required {
+    border: 2px solid red;
+}
+
 
 footer {
     display: flex;

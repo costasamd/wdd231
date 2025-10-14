@@ -23,6 +23,43 @@ pdfjsLib.getDocument(book).promise.then(pdf => {
     console.error('Error loading PDF:', err)
 });
 
+//----------random card--------//
+
+import { getRandomCard } from './randomcard.mjs';
+
+const cardContainer = document.getElementById('lightcard');
+
+async function displayRandomCard() {
+    const card = await getRandomCard();
+    if (!card) {
+        cardContainer.innerHTML = '<p>Failed to load card data. Please try again later.</p>';
+        return;
+    }
+
+    cardContainer.innerHTML = '';
+
+    const section = document.createElement('section');
+    const name = document.createElement('h2');
+    const image = document.createElement('img');
+    const description = document.createElement('p');
+
+    name.textContent = card.name;
+    image.src = card.card_images[0].image_url;
+    image.alt = `Image of ${card.name}`;
+    image.width = 250;
+    image.height = 350;
+    image.loading = 'lazy';
+    description.textContent = card.desc;
+
+    section.appendChild(name);
+    section.appendChild(image);
+    section.appendChild(description);
+
+    cardContainer.appendChild(section);
+}
+
+displayRandomCard();
+
 // ----------local storage--------//
 
 const visitCount = document.getElementById("visits");

@@ -42,6 +42,7 @@ header span{
 h1{
     font-family: var(--altfont);
     font-size: 3rem;
+    text-align: center;
 }
 
 p{

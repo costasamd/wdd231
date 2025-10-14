@@ -101,6 +101,13 @@ p{
     color: var(--secondary);
 }
 
+#lightcard img,
+p, h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #new{
     grid-column: 2;
     grid-row: 2;

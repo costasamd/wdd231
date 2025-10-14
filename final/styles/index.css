@@ -39,7 +39,7 @@ header span{
     overflow: hidden;
 }
 
-h1{
+h1, h2{
     font-family: var(--altfont);
     font-size: 3rem;
     text-align: center;
@@ -94,19 +94,18 @@ p{
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-items: center;
     border: 5px solid var(--primary);
     width: 100%;
     background-color: var(--primary);
     color: var(--secondary);
 }
 
-#lightcard img,
-p, h2{
+#hig img{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 #new{
@@ -136,7 +135,7 @@ footer {
 }
 
 footer p {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;

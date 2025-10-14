@@ -22,3 +22,12 @@ pdfjsLib.getDocument(book).promise.then(pdf => {
 }).catch(err => {
     console.error('Error loading PDF:', err)
 });
+
+// ----------local storage--------//
+
+const visitCount = document.getElementById("visits");
+
+let numVisits = Number(window.localStorage.getItem("visits")) || 0;
+numVisits++;
+localStorage.setItem("visits", numVisits);
+visitCount.textContent = `number of visits to this website: ${numVisits}`;

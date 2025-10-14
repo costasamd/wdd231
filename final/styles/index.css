@@ -31,6 +31,11 @@ header span{
 }
 
 #hero{
+    width: 100%;
+}
+#hero img{
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -123,3 +128,4 @@ footer p {
     align-items: center;
     font-size: 1.5rem;
 }
+

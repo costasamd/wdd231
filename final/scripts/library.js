@@ -42,12 +42,16 @@ function displayCards(ygo) {
         cardName.addEventListener('click', () => {
             if (cardDesc.style.display === 'none') {
                 cardDesc.style.display = 'block';
-
+                if (cardImg.style.display === 'none') {
+                    cardImg.style.display = 'block';
+                }
             } else {
                 cardDesc.style.display = 'none';
+                cardImg.style.display = 'none';
 
             }
         })
+
 
         library.appendChild(cardName);
         library.appendChild(cardImg);
